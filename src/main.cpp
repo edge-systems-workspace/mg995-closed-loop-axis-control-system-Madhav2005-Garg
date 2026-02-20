@@ -6,6 +6,8 @@
 Servo myServo;
 
 void setup() {
+    myServo.attach(SERVO_PIN);
+    Serial.begin(9600);
 }
 
 void loop() {
