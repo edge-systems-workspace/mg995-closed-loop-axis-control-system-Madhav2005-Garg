@@ -10,5 +10,11 @@ void setup() {
     Serial.begin(9600);
 }
 
+// ... setup code same as above ...
+
 void loop() {
+    for (int i = 0; i <= 180; i++) {
+        myServo.write(i);
+        delay(15);
+    }
 }
